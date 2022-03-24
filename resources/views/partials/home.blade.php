@@ -11,7 +11,7 @@
 
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="images/illustrations/code-orange.svg" alt="hero-header" /></div>
+        <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="images/illustrations/form-img.png" alt="hero-header" /></div>
         <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-8">
           <h1 class="fw-normal fs-6 fs-xxl-7">Te acopañamos en tu</h1>
           <h1 class="fw-bolder fs-6 fs-xxl-7 mb-2">empresa o negocio.</h1>
