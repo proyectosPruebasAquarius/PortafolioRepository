@@ -4,62 +4,69 @@
 @section('content')
  <!--SECCTION DE HOME-->
 
- <section class="py-xxl-10 pb-0" id="home">
+ <section class="py-xxl-10 pb-0" id="home" style="height: 100vh;">
    <!-- <div class="bg-holder bg-size" style="background-image:url(images/illustrations/code-orange.svg);background-position:top center;background-size:cover;">
     </div>-->
     <!--/.bg-holder-->
-
+   
+    <div class="bg-holder bg-size" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%,rgba(243,0,246,0) 90%), url(images/illustrations/bg-code-3.jpg);background-position:top center;background-size:cover; /* margin-top: 80px */">
+    </div>
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="images/illustrations/form-img.png" alt="hero-header" /></div>
-        <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-8">
-          <h1 class="fw-normal fs-6 fs-xxl-7">Te acopañamos en tu</h1>
-          <h1 class="fw-bolder fs-6 fs-xxl-7 mb-2">empresa o negocio.</h1>
-         <!--<p class="fs-1 mb-5">We deliver your products safely to <br />your home in a reasonable time. </p>-->
-         <br>
-         <a class="btn btn-primary text-black me-2" href="/proyectos" role="button">Proyectos<i class="fas fa-arrow-right ms-2"></i></a>
+      
+        <div class="row">
+          <div class="col-12 text-center" style="position: absolute; top: 20vh; /* right: 0;  */">
+            <h1 class="fw-normal fs-6 fs-xxl-7 text-white">Te acopañamos en tu</h1>
+            <h1 class="fw-bolder fs-6 fs-xxl-7 mb-2 text-white">empresa o negocio.</h1>
+          </div>
         </div>
-      </div>
+      
     </div>
   </section>
 
 
  
-  <section class="pt-7 pb-7 bg-gray">
+  <section class="pt-7 pb-7 bg-gray" {{-- style="border-bottom-left-radius: 50%" --}}>
     <div class="services">
       <div class="container">
           <div class="row">
-              <div class="col-12 text-center"><h2>Servicios</h2></div>
-              <br>
-              <div class="col-md-6 col-lg-4 mb-3">
+              <div class="col-12 text-center">
+                <h2>Servicios</h2>
+              </div>
+              
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-laptop-code fa-3x mb-4 text-danger"></i>
                       <h4>Desarrollo de Sitios Web</h4>
                       <p>Creamos la web para tú empresa o negocio</p>
-                      <a class="readmore text-danger" href="{{ url('servicios') }}"><span>Más Información</span></a>
+                      <a class="readmore text-danger" href="{{ url('servicios') }}">
+                        <span>Más Información</span>
+                      </a>
                   </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-3">
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-wrench fa-3x mb-4 text-danger"></i>
                       <h4>Soporte y Mantenimiento Web</h4>
                       <p>Soporte y mantenimiento de tú sitio web</p>
-                      <a class="readmore text-danger" href="{{ url('servicios') }}"><span>Más Información</span></a>
+                      <a class="readmore text-danger" href="{{ url('servicios') }}">
+                        <span>Más Información</span>
+                      </a>
                   </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-3">
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-headset  fa-3x mb-4 text-danger"></i>
                       <h4>Asesoria</h4>
-                      <p>Asesoria sobre  hardware para tú empresa</p>
-                      <a class="readmore text-danger" href="{{ url('servicios') }}"><span>Más Información</span></a>
+                      <p>Asesoria sobre hardware para tú empresa</p>
+                      <a class="readmore text-danger" href="{{ url('servicios') }}">
+                        <span>Más Información</span>
+                      </a>
                   </div>
-              </div>
-              
+              </div>              
           </div>
       </div>
-  </div>
-   </section>
+    </div>
+  </section>
 
 
 
@@ -370,3 +377,19 @@
 
 
 @endsection
+
+@push('scripts')
+  <script>
+    'use strict';
+    document.addEventListener('scroll', (e) => {
+      /* console.log(window.scrollY); */
+      if (window.scrollY > document.getElementById('home').offsetHeight) {
+        document.querySelector('nav').classList.remove('navbar-dark');
+        document.querySelector('nav').classList.add('navbar-light');
+      } else {
+        document.querySelector('nav').classList.remove('navbar-light');
+        document.querySelector('nav').classList.add('navbar-dark');
+      }
+    })
+  </script>
+@endpush

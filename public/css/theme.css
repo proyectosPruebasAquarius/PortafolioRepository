@@ -61,6 +61,7 @@
     --twitter: #1DA1F2;
     --github: #333;
     --facebook: #316ce8;
+    --ripple: rgba(249, 92, 25, 0.35);
 }
 
 *,
@@ -18876,6 +18877,7 @@ ul {
 .backdrop {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.11);
 }
 
 .majestic-tabs {
@@ -19485,7 +19487,7 @@ ul {
         font-weight: 800;
         color: transparent;
         font-size: 70px;
-        background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+        background: url("../images/illustrations/bg-code-2.jpg") repeat;
         background-position: 40% 50%;
         -webkit-background-clip: text;
         position: relative;
@@ -19511,7 +19513,7 @@ ul {
         font-weight: 800;
         color: transparent;
         font-size: 100px;
-        background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+        background: url("../images/illustrations/bg-code-2.jpg") repeat;
         background-position: 40% 50%;
         -webkit-background-clip: text;
         position: relative;
@@ -19533,7 +19535,7 @@ ul {
         font-weight: 800;
         color: transparent;
         font-size: 120px;
-        background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+        background: url("../images/illustrations/bg-code-2.jpg") repeat;
         background-position: 40% 50%;
         -webkit-background-clip: text;
         position: relative;
@@ -19550,4 +19552,50 @@ ul {
       }
    }
   
+   /* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+    border-radius: 50px;
+    /* ADDED */
+    font-size: 17px;
+  }
+  /* .ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  } */
+  .ripple:active {
+    background-color: var(--ripple);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  .lottie-2 {
+    width: 500px; 
+    height: 500px;
+  }
+  
+.lottie-3 {
+    width: 400px; 
+    height: 300px;
+}
+    @media (max-width: 766px) { 
+        .lottie-2 {
+            width: calc(100vw * 0.9) !important; 
+            height: 230px;
+        }
+
+        .lottie-3 {
+            width: 300px; 
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 991px) { 
+        .lottie-2 {
+            width: 370px; 
+            height: 400px;
+        }
+    }
+
+    
 /*# sourceMappingURL=theme.css.map */

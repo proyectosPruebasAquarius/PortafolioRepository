@@ -22,9 +22,15 @@ Route::get('/contacto','indexController@contact');
 
 
 /*PERSONALIZADAS*/
+Route::get('/admin', function (Request $request) {
+    return view('partials.admin')->with('title', 'Administración');
+})->middleware(['auth']);
+
+Route::get('/compra', 'PayController@index')->name('compra')->middleware('signed');
+Route::post('/realizar-venta', 'PayController@store')->name('store.venta');
 
 
-
+Route::post('/generate-bypass', 'PayController@createSignedRoute')->name('generateBypass');
 /*PERFIL Y OPINIONES */
 Route::get('/perfil/{id}', 'OpinionController@profile');
 Route::get('/opinion/edit/{id}', 'OpinionController@showUpd');

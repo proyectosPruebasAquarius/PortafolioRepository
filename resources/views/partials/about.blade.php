@@ -12,14 +12,14 @@
             
     
             <h2>Misión</h2>
-            <p>Acompañarle a que forme parte del espacio cibernético, sin importar el tamaño de su empresa o negocio.</p>
+            <p>Asesorar a nuestros clientes, cualquiera que sea el tamaño de su mercado, sobre la implementación de la Tecnología de la información a su empresa o negocio, para que mantengan su identidad en la web e innoven sus procesos administrativos, producción y ventas online, en las que les acompañaremos dándoles entrenamiento y soporte continuo.</p>
             
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-6">
             <img src="{{ asset('images/illustrations/valores.svg') }}" alt="Valores  de la empresa" width="140" height="140">
     
-            <h2>Valores</h2>
-            <p>Transparencia, excelencia, libertad, escucha, responsabilidad, lealtad, pasión, trabajo en equipo.</p>
+            <h2>Visión</h2>
+            <p>Crear sistemas informáticos para fusionar sectores que coinciden en un interés común, en donde trabajando juntos ganamos todos.</p>
             
           </div><!-- /.col-lg-4 -->
           
