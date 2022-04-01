@@ -10,7 +10,7 @@
 
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5 col-xl-4"><img src="images/illustrations/callback.png" alt="..." />
+                <div class="col-md-6 col-lg-5 col-xl-4"><img src="images/illustrations/sent-mail.svg" alt="..." />
                   <h5 class="text-black">Contacta Con Nosotros</h5>
                   
                   <p class="text-muted">Lunes a Viernes 8:00 am a 5:00 pm.</p>
@@ -31,22 +31,7 @@
                       <label class="form-label" for="inputPhone">Numero de telefono de Contacto</label>
                       <input class="form-control form-quriar-control" id="inputPhone" maxlength="12"  name="telefono" placeholder="Escribe tu telefono" />
                     </div>
-                    <div class="mb-5 text-center">
-                      <label class="form-label">Interes</label>
-                      <br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="interes" value="Creacion de Proyecto">
-                        <label class="form-check-label" for="inlineCheckbox1">Creacion de Proyecto</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="interes" value="Adquisición de Proyecto">
-                        <label class="form-check-label" for="inlineCheckbox2">Adquisición de Proyecto</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="interes" value="Participacion En Proyecto" >
-                        <label class="form-check-label" for="inlineCheckbox3">Participacion En Proyecto</label>
-                      </div>
-                    </div>
+                   
                     <div class="mb-5">
                       
                       <div class="form-floating">
@@ -89,7 +74,7 @@
                   <th scope="col">Nombre</th>
                   <th scope="col">Correo</th>
                   <th scope="col">Telefono</th>
-                  <th scope="col">Interes</th>
+                  
                   <th scope="col">Tipo de Persona</th>
                   <th scope="col">Mensaje</th>
                   <th scope="col">Fecha de recepcion</th>
@@ -102,7 +87,7 @@
                   <th >{{$contacto->nombre}}</th>
                   <td>{{$contacto->correo}}</td>
                   <td>{{$contacto->telefono}}</td>
-                  <td>{{$contacto->interes}}</td>
+                  
                   <td>{{$contacto->tipo_persona}}</td>
                   <td>
                     <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="{{$contacto->mensaje}}">

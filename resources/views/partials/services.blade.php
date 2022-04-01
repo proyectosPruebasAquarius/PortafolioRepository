@@ -19,9 +19,13 @@
                   <div class="card h-100 px-lg-5 card-span">
                     <div class="card-body d-flex flex-column justify-content-around">
                       <div class="text-center pt-5"><i class="fas fa-laptop-code text-danger" style="font-size:86px;"></i>
-                        <h5 class="my-4">Creamos la web para tu empresa o negocio</h5>
+                        <h5 class="my-4 text-justify">Creamos la web para tu empresa o negocio</h5>
                       </div>
-                      <p>En el creciente comercio electrónico, los clientes optan por adquirir sus productos en línea, por lo que tu empresa debería estar en el ciber espacio..</p>
+                      <p>
+                        En el creciente comercio electrónico la supervivencia de las empresas depende de su presencia en internet, 
+                        por medio de una página web pueden alcanzar el éxito y su permanencia ya que a través de ésta su alcance es mundial, 
+                        ayuda a generar confianza, credibilidad, bien administrada fideliza a los usuarios y a las visitas podría convertirlas en posibles en clientes.
+                      </p>
                       <!--<ul class="list-unstyled">
                         <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Corporate goods
                         </li>
@@ -42,9 +46,12 @@
                   <div class="card h-100 px-lg-5 card-span">
                     <div class="card-body d-flex flex-column justify-content-around">
                       <div class="text-center pt-5"><i class="fas fa-wrench text-danger" style="font-size:86px;"></i>
-                        <h5 class="my-4">Soporte y mantenimiento de tu sitio web</h5>
+                        <h5 class="my-4">Soporte y mantenimiento</h5>
                       </div>
-                      <p>Para que tus clientes puedan adquirir tus productos existentes y tu negocio contar con sus ventas reales.</p>
+                      <p>
+                        Te llevaremos de la mano para que puedas implementar la página web a tu empresa, te proporcionaremos las herramientas necesarias para que la mantengas constantemente actualizada, 
+                        tus clientes te lo agradecerán, ya que para ellos es importante que el producto anunciado realmente esté disponible.
+                      </p>
                       <!--<ul class="list-unstyled">
                         <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Unlimited Bandwidth
                         </li>
@@ -65,9 +72,11 @@
                   <div class="card h-100 px-lg-5 card-span">
                     <div class="card-body d-flex flex-column justify-content-around">
                       <div class="text-center pt-5"><i class="fas fa-headset text-danger" style="font-size:86px;"></i>
-                        <h5 class="my-4">Asesoria sobre el hardware que necesita impletar en tu empresa</h5>
+                        <h5 class="my-4">Asesoría sobre el hardware necesario para tu empresa.</h5>
                       </div>
-                      <p>Siempre buscaremos darte las mejores opciones para que no incurras a grandes costes, para adquirir tu equipamiento.</p>
+                      <p>
+                        Te daremos las mejores opciones para que no incurras en grandes costes para adquirir tu equipamiento.
+                      </p>
                      <!-- <ul class="list-unstyled">
                         <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Unlimited Bandwidth
                         </li>

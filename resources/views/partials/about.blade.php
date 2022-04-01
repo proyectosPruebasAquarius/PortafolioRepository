@@ -5,21 +5,25 @@
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
-        <div class="row text-center">
+        <div class="row text-justify">
           <div class="col-lg-6">
 
-            <img src="{{ asset('images/illustrations/mision.svg') }}" alt="Mision de la empresa" width="140" height="140">
+            <img src="{{ asset('images/illustrations/mision_target.svg') }}" alt="Mision de la empresa" width="140" height="140" style="color:#f95c19">
             
     
             <h2>Misión</h2>
-            <p>Asesorar a nuestros clientes, cualquiera que sea el tamaño de su mercado, sobre la implementación de la Tecnología de la información a su empresa o negocio, para que mantengan su identidad en la web e innoven sus procesos administrativos, producción y ventas online, en las que les acompañaremos dándoles entrenamiento y soporte continuo.</p>
+            <p>
+              Asesorar a nuestros clientes en la implementación de la tecnología de la información aplicada a su empresa, manteniendo su identidad en la web innovando sus procesos administrativos y ventas online, facilitándoles herramientas que contribuyan a su crecimiento en el mercado.
+            </p>
             
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-6">
-            <img src="{{ asset('images/illustrations/valores.svg') }}" alt="Valores  de la empresa" width="140" height="140">
+            <img src="{{ asset('images/illustrations/eyeglasses.svg') }}" alt="Valores  de la empresa" width="140" height="140">
     
             <h2>Visión</h2>
-            <p>Crear sistemas informáticos para fusionar sectores que coinciden en un interés común, en donde trabajando juntos ganamos todos.</p>
+            <p>
+              Ser una empresa con responsabilidad social, líder en la creación de sistemas informáticos que fusione sectores que coinciden en un mismo interés, de esta manera nos beneficiamos todos.
+            </p>
             
           </div><!-- /.col-lg-4 -->
           

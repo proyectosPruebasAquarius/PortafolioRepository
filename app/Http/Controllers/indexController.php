@@ -42,7 +42,7 @@ class indexController extends Controller
     public function contact()
     {
         $title = "Aquarius IT SV | Contacto";
-        $contacto = Contacto::select('id','nombre','correo','telefono','interes','tipo_persona','mensaje','created_at')->paginate(5);
+        $contacto = Contacto::select('id','nombre','correo','telefono','tipo_persona','mensaje','created_at')->paginate(5);
         return View::make('partials.contact')->with('contactos',$contacto)->with('title',$title);
     }
 
