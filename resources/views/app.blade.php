@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/table.css') }}">
     <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
-
+    @livewireStyles
 </head>
 
 
@@ -52,7 +52,7 @@
     <main class="main" id="top">
         <nav class="navbar navbar-expand-lg {{ request()->path() == '/' ? 'navbar-dark' : 'navbar-light' }} fixed-top py-3 d-block backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container"><a class="navbar-brand  " style="font-weight:bold; " href="/"><img src="{{ asset('images/gallery/AQ-new.png')}}" height="45" alt="logo" /> <span style="background-image: linear-gradient(to right, #f65a19 0%, #18c1bd 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Aquarius IT SV</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"> </span></button>
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
                         <li class="nav-item px-2"><a class="nav-link ripple" aria-current="page" id="inicio" href="/">Inicio</a></li>
@@ -118,7 +118,34 @@
         </nav>
 
         @yield('content')
-
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand  " style="font-weight:bold; " href="/"><img src="{{ asset('images/gallery/AQ-new.png')}}" height="45" alt="logo" /> <span style="background-image: linear-gradient(to right, #f65a19 0%, #18c1bd 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Aquarius IT SV</span></a></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul class="offcanvas-menu">
+                    <li>
+                        <a href="{{ url('/') }}" @if (request()->path() == '/') class="active" @endif>Inicio</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/servicios') }}" @if (request()->path() == 'servicios') class="active" @endif>Servicios<a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/sobre-nosotros') }}" @if (request()->path() == 'sobre-nosotros') class="active" @endif>Sobre Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/proyectos') }}" @if (request()->path() == 'proyectos') class="active" @endif>Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/contacto') }}" @if (request()->path() == 'contacto') class="active" @endif>Contacto</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         <!---LOGIN MODAL--->
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -366,8 +393,11 @@
         <!--EN MODAL DE OPINIONES-->
 
 
-
-
+        <!-- Whatsapp Button -->
+        <a href="https://api.whatsapp.com/send?phone=50377948668&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20precios." class="float" target="_blank">
+            <i class="fab fa-whatsapp my-float"></i>
+        </a>
+        <!-- End Whatsapp Button -->
 
         <!-- ============================================-->
         <!-- <section> begin ============================-->
@@ -383,10 +413,10 @@
                     <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
                         <h5 class="lh-lg fw-bold mb-4  font-sans-serif">Otros enlaces </h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
-                            <li class="lh-lg"><a class="text-black" href="#!">Blogs</a></li>
-                            <li class="lh-lg"><a class="text-black" href="#!">Youtube</a></li>
-                            <li class="lh-lg"><a class="text-black" href="#!">Facebook</a></li>
-                            <li class="lh-lg"><a class="text-black" href="#!">Instagram</a></li>
+                            <li class="lh-lg"><a class="text-black" href="#!"><i class="fab fa-blogger"></i> Blogs</a></li>
+                            <li class="lh-lg"><a class="text-black" href="#!"><i class="fab fa-youtube"></i> Youtube</a></li>
+                            <li class="lh-lg"><a class="text-black" href="#!"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li class="lh-lg"><a class="text-black" href="#!"><i class="fab fa-instagram"></i> Instagram</a></li>
 
                         </ul>
                     </div>
@@ -402,12 +432,14 @@
                     <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
                         <h5 class="lh-lg fw-bold  mb-4 font-sans-serif"> Atención al cliente</h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
-                            <li class="lh-lg"><a class="text-black" href="{{ url('/sobre-nosotros') }}">Sobre Nosotros</a></li>
+                            {{-- <li class="lh-lg"><a class="text-black" href=" url('/sobre-nosotros')  }}">Sobre Nosotros</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Servicios</a></li>
-                            <li class="lh-lg"><a class="text-black" href="{{ url('/proyectos') }}">Proyectos</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/proyectos') }}">Proyectos</a></li> --}}
                             <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Contacto</a></li>
-
-
+                            <li class="lh-lg">Whatsapp: <a class="text-black" href="https://api.whatsapp.com/send?phone=50377948668" target="_blank">77948668</a></li>
+                            <li class="lh-lg">Teléfono: <a class="text-black" href="tel:2305-9181">2305-9181</a></li>
+                            <li class="lh-lg">Correo Electrónico: <a class="text-black" href="mailto:contacto@aquariusit-sv.com">contacto@aquariusit-sv.com</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ route('terminosycondiciones') }}">Términos y Condiciones</a></li>
                         </ul>
                     </div>
                 </div>
@@ -457,11 +489,13 @@
     <!-- ===============================================-->
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    @livewireScripts
     <script src="{{ asset('plugins/@popperjs/popper.min.js') }}"></script>
     <script src="{{ asset('plugins/bootstrap/bootstrap.min.js') }}"></script>
     <script src="{{ asset('plugins/is/is.min.js') }}"></script>
     <script src="{{ asset('plugins/lottie/lottie-player.js') }}"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <x-livewire-alert::scripts />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="{{ asset('plugins/fontawesome/all.min.js') }}"></script>
     <script src="{{ asset('js/theme.js') }}"></script>

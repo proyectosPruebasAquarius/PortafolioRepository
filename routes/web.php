@@ -28,7 +28,13 @@ Route::get('/admin', function (Request $request) {
 
 Route::get('/compra', 'PayController@index')->name('compra')->middleware('signed');
 Route::post('/realizar-venta', 'PayController@store')->name('store.venta');
+Route::get('/prueba', function (Request $request) {
+    return view('partials.signed');
+});
 
+Route::get('/terminosycondiciones', function (Request $request) {
+    return view('partials.terminos')->with('title', 'Términos Legales');
+})->name('terminosycondiciones');
 
 Route::post('/generate-bypass', 'PayController@createSignedRoute')->name('generateBypass');
 /*PERFIL Y OPINIONES */

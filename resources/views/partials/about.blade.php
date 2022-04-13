@@ -4,24 +4,30 @@
 <section class="py-7" id="services" container-xl="container-xl">
     <div class="container marketing">
 
+      
+      
         <!-- Three columns of text below the carousel -->
-        <div class="row text-justify">
+        <div class="row featurette mt-5">
           <div class="col-lg-6">
 
-            <img src="{{ asset('images/illustrations/mision_target.svg') }}" alt="Mision de la empresa" width="140" height="140" style="color:#f95c19">
-            
-    
-            <h2>Misión</h2>
-            <p>
+            <div>
+              <img src="{{ asset('images/illustrations/mision_target.svg') }}" class="d-inline mb-3" alt="Mision de la empresa" width="40" height="40" style="color:#f95c19">
+              
+      
+              <h2 class="text-justify d-inline">Misión</h2>
+            </div>
+            <p class="text-justify">
               Asesorar a nuestros clientes en la implementación de la tecnología de la información aplicada a su empresa, manteniendo su identidad en la web innovando sus procesos administrativos y ventas online, facilitándoles herramientas que contribuyan a su crecimiento en el mercado.
             </p>
             
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-6">
-            <img src="{{ asset('images/illustrations/eyeglasses.svg') }}" alt="Valores  de la empresa" width="140" height="140">
+            <div>
+              <img src="{{ asset('images/illustrations/eyeglasses.svg') }}" class="d-inline mb-3" alt="Valores  de la empresa" width="40" height="40">
     
-            <h2>Visión</h2>
-            <p>
+              <h2 class="text-justify d-inline">Visión</h2>
+            </div>
+            <p class="text-justify">
               Ser una empresa con responsabilidad social, líder en la creación de sistemas informáticos que fusione sectores que coinciden en un mismo interés, de esta manera nos beneficiamos todos.
             </p>
             
@@ -32,48 +38,13 @@
     
         <!-- START THE FEATURETTES -->
     
-        <hr class="featurette-divider">
+        
     
-        <div class="row featurette">
-          <div class="col-12 col-md-7">
-            <h2 class="featurette-heading">Nuestra Ubicación.</h2>
-            <p class="lead">
-               Estamos ubicados en 4ª Calle Oriente, Chalatenango, Chalatenango El Salvador.
-
-               <ul>
-                 <li>
-                   
-                   <span style="font-weight:bold;">
-                    Horarios:
-                   </span>
-                    8:00 am - 5:00 pm.
-                 </li>
-                 
-                 <li>
-                  <span style="font-weight:bold;">
-                    Horarios Sabado:
-                  </span>
-                 8:00 am - 12:00 md.
-                 </li>
-                 <li>
-                  <span style="font-weight:bold;">
-                    Teléfono:
-                  </span>
-                   <a href="tel:2332-3232">2332-3232</a>
-                 </li>
-               </ul>
-            </p>
-          </div>
-          <div class="col-12 col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d241.91375194952846!2d-88.93700446612296!3d14.040523063255392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8f6365da76e4ae8d%3A0xb526927bae7d0d75!2s23R7%2B57G%20BL%20Makeup%20%26%20More*21%2C%20Chalatenango%20CP%201301!3m2!1d14.0404474!2d-88.9368097!5e0!3m2!1ses-419!2ssv!4v1646345328431!5m2!1ses-419!2ssv" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
+        
     
-        <hr class="featurette-divider">
+        <hr class="featurette-divider d-none">
     
-        <div class="row featurette">
+        <div class="row featurette d-none">
           <div class="py-5 team4">
             <div class="container">
               <div class="row justify-content-center mb-4">

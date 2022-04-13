@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
+class ComposerStaticInit58c89ddf631f952cc72b15cb9aa015b2
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -29,6 +29,7 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
@@ -115,11 +116,18 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         ),
         'L' => 
         array (
+            'Livewire\\' => 9,
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\' => 17,
             'League\\CommonMark\\' => 18,
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
+        ),
+        'J' => 
+        array (
+            'Jenssegers\\Agent\\' => 17,
+            'Jaybizzle\\CrawlerDetect\\' => 24,
+            'Jantinnerezo\\LivewireAlert\\' => 27,
         ),
         'I' => 
         array (
@@ -356,6 +364,10 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Livewire\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/livewire/livewire/src',
+        ),
         'League\\MimeTypeDetection\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
@@ -375,6 +387,18 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Jenssegers\\Agent\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/agent/src',
+        ),
+        'Jaybizzle\\CrawlerDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
+        ),
+        'Jantinnerezo\\LivewireAlert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src',
         ),
         'Illuminate\\Foundation\\Auth\\' => 
         array (
@@ -474,6 +498,13 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'D' => 
+        array (
+            'Detection' => 
+            array (
+                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -496,6 +527,8 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         'App\\Http\\Controllers\\ProyectoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProyectoController.php',
         'App\\Http\\Controllers\\indexController' => __DIR__ . '/../..' . '/app/Http/Controllers/indexController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Livewire\\ContactForm' => __DIR__ . '/../..' . '/app/Http/Livewire/ContactForm.php',
+        'App\\Http\\Livewire\\PayForm' => __DIR__ . '/../..' . '/app/Http/Livewire/PayForm.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -643,6 +676,7 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'Detection\\MobileDetect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced/Detection/MobileDetect.php',
         'Doctrine\\Common\\Lexer\\AbstractLexer' => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php',
         'Doctrine\\Inflector\\CachedWordInflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
         'Doctrine\\Inflector\\GenericLanguageInflectorFactory' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php',
@@ -2414,6 +2448,17 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'Jantinnerezo\\LivewireAlert\\Exceptions\\AlertException' => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src/Exceptions/AlertException.php',
+        'Jantinnerezo\\LivewireAlert\\LivewireAlert' => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src/LivewireAlert.php',
+        'Jantinnerezo\\LivewireAlert\\LivewireAlertServiceProvider' => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src/LivewireAlertServiceProvider.php',
+        'Jaybizzle\\CrawlerDetect\\CrawlerDetect' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/CrawlerDetect.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\AbstractProvider' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/AbstractProvider.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Crawlers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Crawlers.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Exclusions' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Exclusions.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Headers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Headers.php',
+        'Jenssegers\\Agent\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Agent.php',
+        'Jenssegers\\Agent\\AgentServiceProvider' => __DIR__ . '/..' . '/jenssegers/agent/src/AgentServiceProvider.php',
+        'Jenssegers\\Agent\\Facades\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Facades/Agent.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
@@ -2696,6 +2741,121 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
         'League\\MimeTypeDetection\\OverridingExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php',
+        'Livewire\\Castable' => __DIR__ . '/..' . '/livewire/livewire/src/Castable.php',
+        'Livewire\\Commands\\ComponentParser' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/ComponentParser.php',
+        'Livewire\\Commands\\ComponentParserFromExistingComponent' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/ComponentParserFromExistingComponent.php',
+        'Livewire\\Commands\\CopyCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/CopyCommand.php',
+        'Livewire\\Commands\\CpCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/CpCommand.php',
+        'Livewire\\Commands\\DeleteCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/DeleteCommand.php',
+        'Livewire\\Commands\\DiscoverCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/DiscoverCommand.php',
+        'Livewire\\Commands\\FileManipulationCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/FileManipulationCommand.php',
+        'Livewire\\Commands\\MakeCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/MakeCommand.php',
+        'Livewire\\Commands\\MakeLivewireCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/MakeLivewireCommand.php',
+        'Livewire\\Commands\\MoveCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/MoveCommand.php',
+        'Livewire\\Commands\\MvCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/MvCommand.php',
+        'Livewire\\Commands\\PublishCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/PublishCommand.php',
+        'Livewire\\Commands\\RmCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/RmCommand.php',
+        'Livewire\\Commands\\S3CleanupCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/S3CleanupCommand.php',
+        'Livewire\\Commands\\StubParser' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/StubParser.php',
+        'Livewire\\Commands\\StubsCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/StubsCommand.php',
+        'Livewire\\Commands\\TouchCommand' => __DIR__ . '/..' . '/livewire/livewire/src/Commands/TouchCommand.php',
+        'Livewire\\CompilerEngineForIgnition' => __DIR__ . '/..' . '/livewire/livewire/src/CompilerEngineForIgnition.php',
+        'Livewire\\Component' => __DIR__ . '/..' . '/livewire/livewire/src/Component.php',
+        'Livewire\\ComponentChecksumManager' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentChecksumManager.php',
+        'Livewire\\ComponentConcerns\\HandlesActions' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/HandlesActions.php',
+        'Livewire\\ComponentConcerns\\InteractsWithProperties' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/InteractsWithProperties.php',
+        'Livewire\\ComponentConcerns\\PerformsRedirects' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/PerformsRedirects.php',
+        'Livewire\\ComponentConcerns\\ReceivesEvents' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/ReceivesEvents.php',
+        'Livewire\\ComponentConcerns\\RendersLivewireComponents' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/RendersLivewireComponents.php',
+        'Livewire\\ComponentConcerns\\TracksRenderedChildren' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/TracksRenderedChildren.php',
+        'Livewire\\ComponentConcerns\\ValidatesInput' => __DIR__ . '/..' . '/livewire/livewire/src/ComponentConcerns/ValidatesInput.php',
+        'Livewire\\Connection\\ConnectionHandler' => __DIR__ . '/..' . '/livewire/livewire/src/Connection/ConnectionHandler.php',
+        'Livewire\\Controllers\\CanPretendToBeAFile' => __DIR__ . '/..' . '/livewire/livewire/src/Controllers/CanPretendToBeAFile.php',
+        'Livewire\\Controllers\\FilePreviewHandler' => __DIR__ . '/..' . '/livewire/livewire/src/Controllers/FilePreviewHandler.php',
+        'Livewire\\Controllers\\FileUploadHandler' => __DIR__ . '/..' . '/livewire/livewire/src/Controllers/FileUploadHandler.php',
+        'Livewire\\Controllers\\HttpConnectionHandler' => __DIR__ . '/..' . '/livewire/livewire/src/Controllers/HttpConnectionHandler.php',
+        'Livewire\\Controllers\\LivewireJavaScriptAssets' => __DIR__ . '/..' . '/livewire/livewire/src/Controllers/LivewireJavaScriptAssets.php',
+        'Livewire\\CreateBladeView' => __DIR__ . '/..' . '/livewire/livewire/src/CreateBladeView.php',
+        'Livewire\\DisableBrowserCache' => __DIR__ . '/..' . '/livewire/livewire/src/DisableBrowserCache.php',
+        'Livewire\\Event' => __DIR__ . '/..' . '/livewire/livewire/src/Event.php',
+        'Livewire\\Exceptions\\BypassViewHandler' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/BypassViewHandler.php',
+        'Livewire\\Exceptions\\CannotBindToModelDataWithoutValidationRuleException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/CannotBindToModelDataWithoutValidationRuleException.php',
+        'Livewire\\Exceptions\\CannotUseReservedLivewireComponentProperties' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/CannotUseReservedLivewireComponentProperties.php',
+        'Livewire\\Exceptions\\ComponentAttributeMissingOnDynamicComponentException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/ComponentAttributeMissingOnDynamicComponentException.php',
+        'Livewire\\Exceptions\\ComponentNotFoundException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/ComponentNotFoundException.php',
+        'Livewire\\Exceptions\\CorruptComponentPayloadException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/CorruptComponentPayloadException.php',
+        'Livewire\\Exceptions\\DirectlyCallingLifecycleHooksNotAllowedException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/DirectlyCallingLifecycleHooksNotAllowedException.php',
+        'Livewire\\Exceptions\\LivewirePageExpiredBecauseNewDeploymentHasSignificantEnoughChanges' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/LivewirePageExpiredBecauseNewDeploymentHasSignificantEnoughChanges.php',
+        'Livewire\\Exceptions\\MethodNotFoundException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/MethodNotFoundException.php',
+        'Livewire\\Exceptions\\MissingFileUploadsTraitException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/MissingFileUploadsTraitException.php',
+        'Livewire\\Exceptions\\MissingRulesException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/MissingRulesException.php',
+        'Livewire\\Exceptions\\NonPublicComponentMethodCall' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/NonPublicComponentMethodCall.php',
+        'Livewire\\Exceptions\\PropertyNotFoundException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/PropertyNotFoundException.php',
+        'Livewire\\Exceptions\\PublicPropertyNotFoundException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/PublicPropertyNotFoundException.php',
+        'Livewire\\Exceptions\\PublicPropertyTypeNotAllowedException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/PublicPropertyTypeNotAllowedException.php',
+        'Livewire\\Exceptions\\RootTagMissingFromViewException' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/RootTagMissingFromViewException.php',
+        'Livewire\\Exceptions\\S3DoesntSupportMultipleFileUploads' => __DIR__ . '/..' . '/livewire/livewire/src/Exceptions/S3DoesntSupportMultipleFileUploads.php',
+        'Livewire\\Features\\OptimizeRenderedDom' => __DIR__ . '/..' . '/livewire/livewire/src/Features/OptimizeRenderedDom.php',
+        'Livewire\\Features\\Placeholder' => __DIR__ . '/..' . '/livewire/livewire/src/Features/Placeholder.php',
+        'Livewire\\Features\\SupportActionReturns' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportActionReturns.php',
+        'Livewire\\Features\\SupportBootMethod' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportBootMethod.php',
+        'Livewire\\Features\\SupportBrowserHistory' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportBrowserHistory.php',
+        'Livewire\\Features\\SupportChildren' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportChildren.php',
+        'Livewire\\Features\\SupportCollections' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportCollections.php',
+        'Livewire\\Features\\SupportComponentTraits' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportComponentTraits.php',
+        'Livewire\\Features\\SupportDateTimes' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportDateTimes.php',
+        'Livewire\\Features\\SupportEvents' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportEvents.php',
+        'Livewire\\Features\\SupportFileDownloads' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportFileDownloads.php',
+        'Livewire\\Features\\SupportFileUploads' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportFileUploads.php',
+        'Livewire\\Features\\SupportLocales' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportLocales.php',
+        'Livewire\\Features\\SupportPostDeploymentInvalidation' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportPostDeploymentInvalidation.php',
+        'Livewire\\Features\\SupportRedirects' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportRedirects.php',
+        'Livewire\\Features\\SupportRootElementTracking' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportRootElementTracking.php',
+        'Livewire\\Features\\SupportStacks' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportStacks.php',
+        'Livewire\\Features\\SupportValidation' => __DIR__ . '/..' . '/livewire/livewire/src/Features/SupportValidation.php',
+        'Livewire\\FileUploadConfiguration' => __DIR__ . '/..' . '/livewire/livewire/src/FileUploadConfiguration.php',
+        'Livewire\\GenerateSignedUploadUrl' => __DIR__ . '/..' . '/livewire/livewire/src/GenerateSignedUploadUrl.php',
+        'Livewire\\HydrationMiddleware\\AddAttributesToRootTagOfHtml' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/AddAttributesToRootTagOfHtml.php',
+        'Livewire\\HydrationMiddleware\\CallHydrationHooks' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/CallHydrationHooks.php',
+        'Livewire\\HydrationMiddleware\\CallPropertyHydrationHooks' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/CallPropertyHydrationHooks.php',
+        'Livewire\\HydrationMiddleware\\HashDataPropertiesForDirtyDetection' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/HashDataPropertiesForDirtyDetection.php',
+        'Livewire\\HydrationMiddleware\\HydratePublicProperties' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/HydratePublicProperties.php',
+        'Livewire\\HydrationMiddleware\\HydrationMiddleware' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/HydrationMiddleware.php',
+        'Livewire\\HydrationMiddleware\\NormalizeComponentPropertiesForJavaScript' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/NormalizeComponentPropertiesForJavaScript.php',
+        'Livewire\\HydrationMiddleware\\NormalizeDataForJavaScript' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/NormalizeDataForJavaScript.php',
+        'Livewire\\HydrationMiddleware\\NormalizeServerMemoSansDataForJavaScript' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/NormalizeServerMemoSansDataForJavaScript.php',
+        'Livewire\\HydrationMiddleware\\PerformActionCalls' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/PerformActionCalls.php',
+        'Livewire\\HydrationMiddleware\\PerformDataBindingUpdates' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/PerformDataBindingUpdates.php',
+        'Livewire\\HydrationMiddleware\\PerformEventEmissions' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/PerformEventEmissions.php',
+        'Livewire\\HydrationMiddleware\\RenderView' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/RenderView.php',
+        'Livewire\\HydrationMiddleware\\SecureHydrationWithChecksum' => __DIR__ . '/..' . '/livewire/livewire/src/HydrationMiddleware/SecureHydrationWithChecksum.php',
+        'Livewire\\ImplicitRouteBinding' => __DIR__ . '/..' . '/livewire/livewire/src/ImplicitRouteBinding.php',
+        'Livewire\\ImplicitlyBoundMethod' => __DIR__ . '/..' . '/livewire/livewire/src/ImplicitlyBoundMethod.php',
+        'Livewire\\LifecycleManager' => __DIR__ . '/..' . '/livewire/livewire/src/LifecycleManager.php',
+        'Livewire\\Livewire' => __DIR__ . '/..' . '/livewire/livewire/src/Livewire.php',
+        'Livewire\\LivewireBladeDirectives' => __DIR__ . '/..' . '/livewire/livewire/src/LivewireBladeDirectives.php',
+        'Livewire\\LivewireComponentsFinder' => __DIR__ . '/..' . '/livewire/livewire/src/LivewireComponentsFinder.php',
+        'Livewire\\LivewireManager' => __DIR__ . '/..' . '/livewire/livewire/src/LivewireManager.php',
+        'Livewire\\LivewireServiceProvider' => __DIR__ . '/..' . '/livewire/livewire/src/LivewireServiceProvider.php',
+        'Livewire\\LivewireTagCompiler' => __DIR__ . '/..' . '/livewire/livewire/src/LivewireTagCompiler.php',
+        'Livewire\\LivewireViewCompilerEngine' => __DIR__ . '/..' . '/livewire/livewire/src/LivewireViewCompilerEngine.php',
+        'Livewire\\Macros\\DuskBrowserMacros' => __DIR__ . '/..' . '/livewire/livewire/src/Macros/DuskBrowserMacros.php',
+        'Livewire\\Macros\\ViewMacros' => __DIR__ . '/..' . '/livewire/livewire/src/Macros/ViewMacros.php',
+        'Livewire\\ObjectPrybar' => __DIR__ . '/..' . '/livewire/livewire/src/ObjectPrybar.php',
+        'Livewire\\Redirector' => __DIR__ . '/..' . '/livewire/livewire/src/Redirector.php',
+        'Livewire\\Request' => __DIR__ . '/..' . '/livewire/livewire/src/Request.php',
+        'Livewire\\Response' => __DIR__ . '/..' . '/livewire/livewire/src/Response.php',
+        'Livewire\\TemporaryUploadedFile' => __DIR__ . '/..' . '/livewire/livewire/src/TemporaryUploadedFile.php',
+        'Livewire\\Testing\\Concerns\\HasFunLittleUtilities' => __DIR__ . '/..' . '/livewire/livewire/src/Testing/Concerns/HasFunLittleUtilities.php',
+        'Livewire\\Testing\\Concerns\\MakesAssertions' => __DIR__ . '/..' . '/livewire/livewire/src/Testing/Concerns/MakesAssertions.php',
+        'Livewire\\Testing\\Concerns\\MakesCallsToComponent' => __DIR__ . '/..' . '/livewire/livewire/src/Testing/Concerns/MakesCallsToComponent.php',
+        'Livewire\\Testing\\MakesHttpRequestsWrapper' => __DIR__ . '/..' . '/livewire/livewire/src/Testing/MakesHttpRequestsWrapper.php',
+        'Livewire\\Testing\\TestableLivewire' => __DIR__ . '/..' . '/livewire/livewire/src/Testing/TestableLivewire.php',
+        'Livewire\\WireDirective' => __DIR__ . '/..' . '/livewire/livewire/src/WireDirective.php',
+        'Livewire\\Wireable' => __DIR__ . '/..' . '/livewire/livewire/src/Wireable.php',
+        'Livewire\\WithFileUploads' => __DIR__ . '/..' . '/livewire/livewire/src/WithFileUploads.php',
+        'Livewire\\WithPagination' => __DIR__ . '/..' . '/livewire/livewire/src/WithPagination.php',
+        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',
@@ -5090,10 +5250,10 @@ class ComposerStaticInitcdb3d37b6876244924e5a81471c35747
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcdb3d37b6876244924e5a81471c35747::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcdb3d37b6876244924e5a81471c35747::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitcdb3d37b6876244924e5a81471c35747::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitcdb3d37b6876244924e5a81471c35747::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit58c89ddf631f952cc72b15cb9aa015b2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit58c89ddf631f952cc72b15cb9aa015b2::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit58c89ddf631f952cc72b15cb9aa015b2::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit58c89ddf631f952cc72b15cb9aa015b2::$classMap;
 
         }, null, ClassLoader::class);
     }

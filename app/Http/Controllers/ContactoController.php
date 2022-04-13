@@ -39,8 +39,9 @@ class ContactoController extends Controller
         $contacto =  new Contacto;
         $contacto->nombre = $request->nombre;
         $contacto->correo = $request->correo;
-        $contacto->telefono = $request->telefono;        
-        $contacto->tipo_persona = $request->tipo_persona;
+        $contacto->telefono = $request->telefono;
+        /* $contacto->interes = $request->interes; */
+        $contacto->empresa = $request->empresa;
         $contacto->mensaje = $request->mensaje;
         $contacto->save();
         return back();

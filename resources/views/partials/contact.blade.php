@@ -2,61 +2,72 @@
 
 
 @section('content')
-<section class="py-7" id="services" container-xl="container-xl">
+<section class="py-1" id="services" container-xl="container-xl">
 
  <!-- ============================================-->
       <!-- <section> begin ============================-->
         <section>
 
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5 col-xl-4"><img src="images/illustrations/sent-mail.svg" alt="..." />
-                  <h5 class="text-black">Contacta Con Nosotros</h5>
-                  
+            <div class="px-3">
+              {{-- <div class="row text-center mb-3">
+                <div class="col-12">
+                  <h5 class="text-black">Contáctanos</h5>
                   <p class="text-muted">Lunes a Viernes 8:00 am a 5:00 pm.</p>
+                  <img src="images/illustrations/sent-mail.svg" alt="..." class="img-fluid mx-auto" height="150" width="150" />  
                 </div>
-                <div class="col-md-6 col-lg-5 col-xl-4">
-                  <form class="row" method="POST" action="{{ url('/contacto/add') }}" >
-                    @method('POST')
-                    @csrf
-                    <div class="mb-3">
-                      <label class="form-label" for="inputName">Nombre de la persona de Contacto</label>
-                      <input class="form-control form-quriar-control" id="inputName" type="text" min="10" maxlength="50" name="nombre" placeholder="Escribe tu nombre" />
+              </div> --}}
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 col-xl-4 me-3">
+                  <div class="card shadow h-100"{{--  style="background: #c6ced1" --}}>
+                    <div class="card-body  mt-5">
+                      <h5 class="text-black">Contáctanos</h5>
+                      <img src="images/illustrations/sent-mail.svg" alt="..." class="img-fluid mb-2" height="150" width="150" />  
+                      @livewire('contact-form')
                     </div>
-                    <div class="mb-3">
-                      <label class="form-label" for="inputEmail">Correo de Contacto</label>
-                      <input class="form-control form-quriar-control" id="inputEmail" type="email" name="correo" placeholder="Escribe tu correo"/>
-                    </div>
-                    <div class="mb-5">
-                      <label class="form-label" for="inputPhone">Numero de telefono de Contacto</label>
-                      <input class="form-control form-quriar-control" id="inputPhone" maxlength="12"  name="telefono" placeholder="Escribe tu telefono" />
-                    </div>
-                   
-                    <div class="mb-5">
-                      
-                      <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" name="tipo_persona">
-                          <option selected disabled>Seleciona</option>
-                          <option value="Persona Natural">Persona Natural</option>
-                          <option value="persona Juridica">persona Juridica</option>
-                         
-                        </select>
-                        <label class="form-label text-black" for="floatingSelect">Tipo de pesona</label>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 col-xl-4 mt-3 mt-md-0 ms-3">
+                  
+                  <div class="row">
+                    <div class="col-12 col-md-12">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d241.91375194952846!2d-88.93700446612296!3d14.040523063255392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8f6365da76e4ae8d%3A0xb526927bae7d0d75!2s23R7%2B57G%20BL%20Makeup%20%26%20More*21%2C%20Chalatenango%20CP%201301!3m2!1d14.0404474!2d-88.9368097!5e0!3m2!1ses-419!2ssv!4v1646345328431!5m2!1ses-419!2ssv" style="border:1px solid rgba(0, 0, 0, 0.125); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; border-radius: 0.5rem" allowfullscreen="" loading="lazy"></iframe>
                       </div>
                     </div>
-                   
-                    <div class="mb-5">
-                      <label class="form-label visually-hidden" for="validationTextarea">Mensaje</label>
-                      <textarea class="form-control form-quriar-control " id="validationTextarea" placeholder="Escriba su Mensaje" style="height: 150px" maxlength="1000" name="mensaje" required="required"></textarea>
+  
+                    <div class="col-12 col-md-12">
+                      <h2 class="featurette-heading">Nuestra Ubicación.</h2>
+                      <p class="lead">
+                         4ª Calle Oriente, Casa 2, Barrio San Antonio, Chalatenango, Chalatenango, El Salvador.
+            
+                         <ul>
+                           <li>
+                             
+                             <span style="font-weight:bold;">
+                              Horarios Lunes a Viernes:
+                             </span>
+                              8:00 am - 5:00 pm.
+                           </li>
+                           
+                           <li>
+                            <span style="font-weight:bold;">
+                              Horarios Sabatinos:
+                            </span>
+                           8:00 am - 12:00 md.
+                           </li>
+                           <li>
+                            <span style="font-weight:bold;">
+                              Teléfono:
+                            </span>
+                             <a href="tel:2305-9181" class="text-dark">2305-9181</a>
+                           </li>
+                         </ul>
+                      </p>
                     </div>
-                    <div class="d-grid">
-                      <button class="btn btn-primary text-black" type="submit">Enviar<i class="fas fa-paper-plane ms-2"></i></button>
-                    </div>
-                    
-
-
-                  </form>
-                </div>
+                  </div>
+                                  
+                </div>                
               </div>
             </div>
             <!-- end of .container-->
@@ -74,7 +85,7 @@
                   <th scope="col">Nombre</th>
                   <th scope="col">Correo</th>
                   <th scope="col">Telefono</th>
-                  
+                  <th scope="col">Interes</th>
                   <th scope="col">Tipo de Persona</th>
                   <th scope="col">Mensaje</th>
                   <th scope="col">Fecha de recepcion</th>
@@ -87,8 +98,8 @@
                   <th >{{$contacto->nombre}}</th>
                   <td>{{$contacto->correo}}</td>
                   <td>{{$contacto->telefono}}</td>
+                  <td>{{$contacto->empresa}}</td>
                   
-                  <td>{{$contacto->tipo_persona}}</td>
                   <td>
                     <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="{{$contacto->mensaje}}">
                     <i class="fal fa-comments"></i>

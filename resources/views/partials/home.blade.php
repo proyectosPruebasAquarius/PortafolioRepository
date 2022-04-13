@@ -36,7 +36,7 @@
               <div class="col-12 col-md-6 col-lg-4 mb-3">
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-laptop-code fa-3x mb-4 text-danger"></i>
-                      <h4>Desarrollo de Sitios Web</h4>
+                      <h4>Desarrollo de Sitios</h4>
                       <p>Creamos la web para tú empresa o negocio</p>
                       <a class="readmore text-danger" href="{{ url('servicios') }}">
                         <span>Más Información</span>
@@ -46,7 +46,7 @@
               <div class="col-12 col-md-6 col-lg-4 mb-3">
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-wrench fa-3x mb-4 text-danger"></i>
-                      <h4>Soporte y Mantenimiento Web</h4>
+                      <h4>Soporte y Mantenimiento</h4>
                       <p>Soporte y mantenimiento de tú sitio web</p>
                       <a class="readmore text-danger" href="{{ url('servicios') }}">
                         <span>Más Información</span>
@@ -81,7 +81,7 @@
 
   <!-- ============================================-->
   <!-- <section> begin ============================-->
-    <section>
+    <section class="d-none">
 
       <div class="container">
         <div class="row">
@@ -131,7 +131,7 @@
     </section>
   <!-- <section> close ============================-->
   <!-- ============================================-->
-  <section class="pt-7 pb-0">
+  <section class="pt-7 pb-0 d-none">
 
     <div class="container">
       <div class="row">
