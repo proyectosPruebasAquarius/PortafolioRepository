@@ -81,7 +81,7 @@
 
   <!-- ============================================-->
   <!-- <section> begin ============================-->
-    <section class="d-none">
+    {{--<section class="d-none">
 
       <div class="container">
         <div class="row">
@@ -128,7 +128,7 @@
       </div>
       <!-- end of .container-->
   
-    </section>
+    </section>--}}
   <!-- <section> close ============================-->
   <!-- ============================================-->
   <section class="pt-7 pb-0 d-none">
@@ -201,7 +201,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -218,7 +218,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it.</p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -235,7 +235,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .</p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -256,7 +256,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -273,7 +273,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('img/icons/avatar.png') }}" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -290,7 +290,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .</p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -311,7 +311,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -328,7 +328,7 @@
                     <p class="card-text pt-3">“I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. </p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -345,7 +345,7 @@
                     <p class="card-text pt-3">I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .</p>
                     <div class="d-xl-flex justify-content-between align-items-center">
                       <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
-                      <div class="d-flex align-items-center"><img class="img-fluid" src="assets/img/icons/avatar.png" alt="" />
+                      <div class="d-flex align-items-center"><img class="img-fluid" src="{{ asset('images/icons/avatar.png') }}" alt="" />
                         <div class="flex-1 ms-3">
                           <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                           <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
