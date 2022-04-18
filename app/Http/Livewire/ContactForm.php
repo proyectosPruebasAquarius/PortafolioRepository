@@ -60,7 +60,7 @@ class ContactForm extends Component
         } catch (\Exception $e) {
             //throw $th;
             $this->alert('error','Ocurrió un error', [
-                'text' => 'porfavor intentelo de nuevo o contactnos via whatsapp',
+                'text' => 'porfavor intentelo de nuevo o contactanos via whatsapp',
                 'position' => 'center',
                 'timer' => 3000,
                 'toast' => false,
