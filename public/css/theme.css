@@ -19558,7 +19558,7 @@ ul {
     transition: background 0.8s;
     border-radius: 50px;
     /* ADDED */
-    font-size: 17px;
+    font-size: 20px;
   }
   /* .ripple:hover {
     background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
@@ -19738,4 +19738,15 @@ ul {
         color: #18c1bd;          
         text-decoration: underline;      
       }
+
+      .politicas li span {
+        display: block;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+    .politicas li span {
+        font-size: 20px;
+        font-weight: bold;
+    }
 /*# sourceMappingURL=theme.css.map */

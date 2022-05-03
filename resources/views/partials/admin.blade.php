@@ -9,8 +9,8 @@
                 <div class="col-4">
                   <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active border-bottom-0" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Generar link de venta</a>
-                    {{-- <a class="list-group-item list-group-item-action border-bottom-0" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-                    <a class="list-group-item list-group-item-action border-bottom-0" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                    <a class="list-group-item list-group-item-action border-bottom-0" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Asistencias a Inaguración</a>
+                    {{-- <a class="list-group-item list-group-item-action border-bottom-0" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
                     <a class="list-group-item list-group-item-action " id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a> --}}
                   </div>
                 </div>
@@ -49,7 +49,37 @@
                             @endisset
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        @php
+                            $asistentes = \DB::table('asistentes_temporal_table')->get();
+                        @endphp
+
+                        <div class="table-responsive">
+                            <table class="table caption-top">
+                                <caption>Lista de Asistentes</caption>
+                                <thead>
+                                <tr>                                    
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo Electrónico</th>
+                                    <th scope="col">Empresa que Representa</th>
+                                    <th scope="col">Teléfono</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    @forelse ($asistentes as $asist)
+                                        <tr>                                    
+                                            <td>{{ $asist->nombre }}</td>
+                                            <td>{{ $asist->email }}</td>
+                                            <td>{{ $asist->empresa ? $asist->empresa : '' }}</td>
+                                            <td>{{ $asist->telefono }}</td>
+                                        </tr>
+                                    @empty
+                                        
+                                    @endforelse                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
                   </div>

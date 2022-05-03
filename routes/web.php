@@ -62,3 +62,7 @@ Auth::routes();
 
 Route::get('/inicio', 'HomeController@index')->name('inicio');
 /*FIN DE LA RUTAS DE LOGIN */
+
+Route::get('/politicas', function () {
+    return view('partials.politicas')->with('title', 'Políticas de Privacidad');
+})->name('politicas');

@@ -42,25 +42,28 @@
                          4ª Calle Oriente, Casa 2, Barrio San Antonio, Chalatenango, Chalatenango, El Salvador.
             
                          <ul>
+                            <li style="list-style: none; font-weight:bold;">
+                              Nuestro Horario:
+                            </li>
                            <li>
                              
                              <span style="font-weight:bold;">
-                              Horarios Lunes a Viernes:
+                              Lunes - Viernes:
                              </span>
-                              8:00 am - 5:00 pm.
+                              8:00 - 17:00 horas.
                            </li>
                            
                            <li>
                             <span style="font-weight:bold;">
-                              Horarios Sabatinos:
+                              Sabado:
                             </span>
-                           8:00 am - 12:00 md.
+                              8:00 - 12:00 horas.
                            </li>
                            <li>
                             <span style="font-weight:bold;">
                               Teléfono:
                             </span>
-                             <a href="tel:2305-9181" class="text-dark">2305-9181</a>
+                             <a href="tel:+5032305-9181" class="text-dark">+503 2305-9181</a>
                            </li>
                          </ul>
                       </p>

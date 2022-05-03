@@ -51,7 +51,7 @@
     <!-- ===============================================-->
     <main class="main" id="top">
         <nav class="navbar navbar-expand-lg {{ request()->path() == '/' ? 'navbar-dark' : 'navbar-light' }} fixed-top py-3 d-block backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
-            <div class="container"><a class="navbar-brand  " style="font-weight:bold; " href="/"><img src="{{ asset('images/gallery/AQ-new.png')}}" height="45" alt="logo" /> <span style="background-image: linear-gradient(to right, #f65a19 0%, #18c1bd 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Aquarius IT SV</span></a>
+            <div class="container"><a class="navbar-brand  " style="font-weight:bold; " href="/"><img src="{{ asset('images/gallery/AQ-new.png')}}" height="45" alt="logo" style="margin-left: 35%" /> <span style="background-image: linear-gradient(to right, #f65a19 0%, #18c1bd 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: block;"> Aquarius IT SV</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"> </span></button>
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
@@ -391,10 +391,10 @@
 
 
         <!--EN MODAL DE OPINIONES-->
-
+        @livewire('asistencia')
 
         <!-- Whatsapp Button -->
-        <a href="https://api.whatsapp.com/send?phone=50377948668&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20precios." class="float" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=50371921807&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20precios." class="float" target="_blank">
             <i class="fab fa-whatsapp my-float"></i>
         </a>
         <!-- End Whatsapp Button -->
@@ -405,13 +405,13 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0">
+                    {{-- <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0">
                         <a class="text-decoration-none" href="/">
                             <img src="{{ asset('images/gallery/AQ-new.png')}}" height="50" width="" /></a>
                         <p class="text-black my-4">La empresa que te acompaña en el crecimiento <br />del comercio electrónico.</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
-                        <h5 class="lh-lg fw-bold mb-4  font-sans-serif">Otros enlaces </h5>
+                    </div> --}}
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-2 order-sm-1">
+                        <h5 class="lh-lg fw-bold mb-4  font-sans-serif">Comunidad </h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             <li class="lh-lg"><a class="text-black" href="#!"><i class="fab fa-blogger"></i> Blogs</a></li>
                             <li class="lh-lg"><a class="text-black" href="#!"><i class="fab fa-youtube"></i> Youtube</a></li>
@@ -420,7 +420,7 @@
 
                         </ul>
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
                         <h5 class="lh-lg fw-bold  mb-4 font-sans-serif">Servicios</h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Diseño y creacion web</a></li>
@@ -429,19 +429,31 @@
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Asesoria</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
-                        <h5 class="lh-lg fw-bold  mb-4 font-sans-serif"> Atención al cliente</h5>
+
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
+                        <h5 class="lh-lg fw-bold  mb-4 font-sans-serif">Quienes Somos</h5>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/sobre-nosotros') }}">Quienes somos</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ route('politicas') }}">Aviso de privacidad</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ route('terminosycondiciones') }}">Condiciones de uso</a></li>                            
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
+                        <h5 class="lh-lg fw-bold  mb-4 font-sans-serif"> Contacto</h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             {{-- <li class="lh-lg"><a class="text-black" href=" url('/sobre-nosotros')  }}">Sobre Nosotros</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Servicios</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/proyectos') }}">Proyectos</a></li> --}}
-                            <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Contacto</a></li>
-                            <li class="lh-lg">Whatsapp: <a class="text-black" href="https://api.whatsapp.com/send?phone=50377948668" target="_blank">77948668</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Soporte técnico</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Contactonos</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Trabaja con nosotros</a></li>
+                            {{-- <li class="lh-lg">Whatsapp: <a class="text-black" href="https://api.whatsapp.com/send?phone=50377948668" target="_blank">77948668</a></li>
                             <li class="lh-lg">Teléfono: <a class="text-black" href="tel:2305-9181">2305-9181</a></li>
-                            <li class="lh-lg">Correo Electrónico: <a class="text-black" href="mailto:contacto@aquariusit-sv.com">contacto@aquariusit-sv.com</a></li>
-                            <li class="lh-lg"><a class="text-black" href="{{ route('terminosycondiciones') }}">Términos y Condiciones</a></li>
+                            <li class="lh-lg">Correo Electrónico: <a class="text-black" href="mailto:contacto@aquariusit-sv.com">contacto@aquariusit-sv.com</a></li>     --}}                        
                         </ul>
                     </div>
+                    
                 </div>
             </div>
             <!-- end of .container-->
@@ -506,6 +518,35 @@
     <script src="{{ asset('js/main.js') }}"></script>
     <!--<script src="js/popper.min.js"></script>-->
     <script src="{{ asset('js/helpers.js') }}"></script>
+
+    {{-- Temporal Added --}}
+    <script>
+        var showModal = (function() {
+            var executed = false;
+            if (localStorage.getItem('executed') === null) {
+                localStorage.setItem('executed', false);
+            }
+
+            return function() {
+                if (localStorage.getItem('executed') == 'false') {
+                    executed = true;
+                    localStorage.setItem('executed', true);
+                    var temporalSModal = new bootstrap.Modal(document.getElementById('temporalModal'));
+                    temporalSModal.show();
+                }
+            };
+        })();
+
+        window.addEventListener("DOMContentLoaded", function() {
+            showModal();
+            /* console.log(document.cookie) */
+            /* $('#temporalModal').modal('show')
+            console.log('entro') */
+        });
+    </script>
+
+
+
     <script>
         let Xmas = new Date();
         let year = Xmas.getFullYear();
