@@ -37,7 +37,7 @@
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-laptop-code fa-3x mb-4 text-danger"></i>
                       <h4>Desarrollo de Sitios</h4>
-                      <p>Creamos la web para tú empresa o negocio</p>
+                      <p>Creamos la web para tu empresa o negocio</p>
                       <a class="readmore text-danger" href="{{ url('servicios') }}">
                         <span>Más Información</span>
                       </a>
@@ -56,8 +56,8 @@
               <div class="col-12 col-md-6 col-lg-4 mb-3">
                   <div class="box p-5 rounded"> 
                       <i class="fas fa-headset  fa-3x mb-4 text-danger"></i>
-                      <h4>Asesoria</h4>
-                      <p>Asesoria sobre hardware para tú empresa</p>
+                      <h4>Asesoría</h4>
+                      <p>Asesoría sobre hardware para tú empresa</p>
                       <a class="readmore text-danger" href="{{ url('servicios') }}">
                         <span>Más Información</span>
                       </a>
@@ -81,7 +81,7 @@
 
   <!-- ============================================-->
   <!-- <section> begin ============================-->
-    <section class="d-none">
+   {{--   <section class="d-none">
 
       <div class="container">
         <div class="row">
@@ -128,10 +128,10 @@
       </div>
       <!-- end of .container-->
   
-    </section>
+    </section>--}}
   <!-- <section> close ============================-->
   <!-- ============================================-->
-  <section class="pt-7 pb-0 d-none">
+ <!-- <section class="pt-7 pb-0 d-none">
 
     <div class="container">
       <div class="row">
@@ -169,9 +169,9 @@
         </div>
       </div>
     </div>
-    <!-- end of .container-->
+   
 
-  </section>
+  </section>-->
 
 
 
@@ -189,8 +189,10 @@
           <h2>Opiniones de los Clientes</h2>
         </div>
       </div>  
+      <div class="pt-6" >
 
-      <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
+      </div>
+      <!--<div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="row h-100">
@@ -367,7 +369,7 @@
             </ol>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
     <!-- end of .container-->
 

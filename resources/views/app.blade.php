@@ -12,8 +12,10 @@
     <!--    Document Title-->
     <!-- ===============================================-->
     <title>{{isset($title) ? $title : 'Laravel'}}</title>
-
-
+    <meta name="description" content="En Aquarius IT, S.A de C.V, asesoramos a las empresas a implementar tecnología de la información, creamos páginas web, ecommerce, marketing digital,apps móviles y aplicaciones de escritorio para digitalizar procesos administrativos de cualquier rubro."/>
+    <meta name="keywords" content="marketing,marketing digital,diseño,diseño grafico,app,apps,aplicaciones,aplicaciones moviles,aplicaciones de escritorio,apps moviles,apps de escritorio,seo,asesoramiento web,asesoramiento,páginas web,página web,página,web,creación de páginas web,creación de página web,diseño web,el salvador,chalatenango,digitalizar procesos administrativos,procesos administrativos,digitalizar,marketing, digital marketing, design, graphic design, app, apps, applications, mobile applications, desktop applications, mobile apps, desktop apps, seo, web advice, advice, web pages, web page, page, web, page creation web, web page creation, web design, el salvador, chalatenango, digitize administrative processes, administrative processes, digitize"/>
+    <meta name="author" content="Aquarius IT, S.A de C.V"/>
+    <meta name="copyright" content="Aquarius IT, S.A de C.V"/>
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
@@ -55,14 +57,14 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"> </span></button>
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-                        <li class="nav-item px-2"><a class="nav-link ripple" aria-current="page" id="inicio" href="/">Inicio</a></li>
-                        <li class="nav-item px-2"><a class="nav-link ripple" id="servicios" href="/servicios">Servicios</a></li>
-                        <li class="nav-item px-2"><a class="nav-link ripple" id="nosotros" href="/sobre-nosotros">Sobre Nosotros</a></li>
-                        <li class="nav-item px-2"><a class="nav-link ripple" id="proyectos" href="/proyectos">Proyectos</a></li>
-                        <li class="nav-item px-2"><a class="nav-link ripple" id="contacto" href="/contacto">Contacto</a></li>
+                        <li class="nav-item px-2"><a class="nav-link ripple" aria-current="page" id="inicio" href="{{ url('/') }}">Inicio</a></li>
+                        <li class="nav-item px-2"><a class="nav-link ripple" id="servicios" href="{{ url('/servicios') }}">Servicios</a></li>
+                        <li class="nav-item px-2"><a class="nav-link ripple" id="nosotros" href="{{ url('/sobre-nosotros') }}">Sobre Nosotros</a></li>
+                        <li class="nav-item px-2"><a class="nav-link ripple" id="proyectos" href="{{ url('/proyectos') }}">Proyectos</a></li>
+                        <li class="nav-item px-2"><a class="nav-link ripple" id="contacto" href="{{ url('/contacto') }}">Contacto</a></li>
                         @auth
                             <li class="nav-item px-2">
-                                <a class="nav-link ripple" id="admin" href="/admin">Administración</a>
+                                <a class="nav-link ripple" id="admin" href="{{ url('/admin') }}">Administración</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link ripple" href="{{ route('logout') }}"
@@ -146,248 +148,7 @@
               </div>
             </div>
           </div>
-        <!---LOGIN MODAL--->
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header bg-primary">
-                        <h5 class="modal-title text-white  w-100 text-center" id="staticBackdropLabel">Inicio de Sesion</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link text-black active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Iniciar Sesion</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link text-black" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Registro</button>
-                            </li>
-
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <!--Login tab-->
-                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-                                <div class="card text-center">
-                                    <div class="card-body text-center mx-center">
-                                        <form method="POST" action="{{ route('login') }}">
-                                            @csrf
-
-                                            <div class="form-group row">
-                                                <label for="email" class="col-md-4 col-form-label text-md-right">correo </label>
-
-                                                <div class="col-md-6">
-                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                                    @error('email')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                    @enderror
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row pt-5">
-                                                <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
-
-                                                <div class="col-md-6">
-                                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                                    @error('password')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                    @enderror
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <div class="col-md-6 offset-md-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                                        <label class="form-check-label" for="remember">
-                                                            Recordar mis datos
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row mb-0">
-                                                <div class="text-center">
-                                                    <button type="submit" class="btn btn-primary">
-                                                        Iniciar Sesion
-                                                    </button>
-
-
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end Login tab-->
-
-                            <!--Register tab-->
-                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12 col-sm-12 col-lg-12">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <form method="POST" action="{{ route('register') }}">
-                                                    @csrf
-
-                                                    <div class="form-group row">
-                                                        <label for="name" class="col-md-4 col-form-label text-md-right">Nombre</label>
-
-                                                        <div class="col-md-6">
-                                                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                                            @error('name')
-                                                            <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row pt-3">
-                                                        <label for="email" class="col-md-4 col-form-label text-md-right">Correo</label>
-
-                                                        <div class="col-md-6">
-                                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                                            @error('email')
-                                                            <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row pt-3">
-                                                        <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
-
-                                                        <div class="col-md-6">
-                                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" aria-describedby="passwordHelpBlock">
-
-                                                            @error('password')
-                                                            <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
-                                                            @enderror
-                                                            <div id="passwordHelpBlock" class="form-text">
-                                                                La contraseña debe tener mas de 8 caracteres y un maximo de 255 caracteres
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row pt-3">
-                                                        <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar Contraseña</label>
-
-                                                        <div class="col-md-6">
-                                                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row mb-0">
-                                                        <div class="text-center">
-                                                            <button type="submit" class="btn btn-primary">
-                                                                Registrarme
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end Register tab-->
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!---END LOGIN MODAL--->
-
-
-        <!--MODAL DE OPINIONES-->
-        <!-- Modal -->
-        <div class="modal fade" id="opinionModal" tabindex="-1" aria-labelledby="opinionModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header  bg-primary ">
-                        <h5 class="modal-title text-white  w-100 text-center" id="opinionModalLabel">Opinión</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center justify-content-center">
-                        <form method="POST" action="{{ url("/opinion/add") }}" id="formOpion">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="titleInput" class="form-label text-black">Título de la opinión</label>
-                                <input type="text" class="form-control" id="titleInput" placeholder="Escribe el título" required maxlength="50" minlength="10" name="titulo">
-                                <div class="form-text">
-                                    El Título debe tener minimo 10 caracteres y un maximo de 50 caracteres
-                                </div>
-                            </div>
-                            <div class="mb-3">
-
-                                <label for="titleInput" class="form-label text-black">Puntuacion de satisfaccion</label>
-                                <br>
-                                <div class="form-check form-check-inline">
-                                    @for ($i = 0; $i < 1; $i++) <i class="fas fa-star text-primary me-1"></i>
-                                        @endfor
-                                        <input class="form-check-input" type="radio" name="puntuacion" id="inlineRadio1" value="1">
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="puntuacion" id="inlineRadio2" value="2">
-                                    @for ($i = 0; $i < 2; $i++) <i class="fas fa-star text-primary me-1"></i>
-                                        @endfor
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="puntuacion" id="inlineRadio3" value="3">
-                                    @for ($i = 0; $i < 3; $i++) <i class="fas fa-star text-primary me-1"></i>
-                                        @endfor
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="puntuacion" id="inlineRadio4" value="4">
-                                    @for ($i = 0; $i < 4; $i++) <i class="fas fa-star text-primary me-1"></i>
-                                        @endfor
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="puntuacion" id="inlineRadio5" value="5">
-                                    @for ($i = 0; $i < 5; $i++) <i class="fas fa-star text-primary me-1"></i>
-                                        @endfor
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="descriptionInput" class="form-label text-black">Opinión</label>
-                                <textarea class="form-control" id="descriptionInput" placeholder="Detalla aqui tu reseña" rows="3" required minlength="30" maxlength="300" name="descripcion"></textarea>
-                                @if ( Auth::check() )
-                                <input type="hidden" name="id_usuario" value="{{ Auth::user()->id }}" id="id_usuario">
-                                @endif
-
-                                <div class="form-text">
-                                    La Opinión debe tener minimo 30 caracteres y un maximo de 300 caracteres
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" form="formOpion">Enviar Opinión</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
 
         <!--EN MODAL DE OPINIONES-->
@@ -423,10 +184,10 @@
                     <div class="col-6 col-sm-4 col-lg-3 mb-3 order-3 order-sm-2">
                         <h5 class="lh-lg fw-bold  mb-4 font-sans-serif">Servicios</h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
-                            <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Diseño y creacion web</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Diseño y creación web</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Soporte y mantenimiento</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Aplicaciones de escritorio</a></li>
-                            <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Asesoria</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Asesoría</a></li>
                         </ul>
                     </div>
 
@@ -446,7 +207,7 @@
                             <li class="lh-lg"><a class="text-black" href="{{ url('/servicios') }}">Servicios</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/proyectos') }}">Proyectos</a></li> --}}
                             <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Soporte técnico</a></li>
-                            <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Contactonos</a></li>
+                            <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Contáctanos</a></li>
                             <li class="lh-lg"><a class="text-black" href="{{ url('/contacto') }}">Trabaja con nosotros</a></li>
                             {{-- <li class="lh-lg">Whatsapp: <a class="text-black" href="https://api.whatsapp.com/send?phone=50377948668" target="_blank">77948668</a></li>
                             <li class="lh-lg">Teléfono: <a class="text-black" href="tel:2305-9181">2305-9181</a></li>
@@ -537,12 +298,12 @@
             };
         })();
 
-        window.addEventListener("DOMContentLoaded", function() {
+       /* window.addEventListener("DOMContentLoaded", function() {
             showModal();
-            /* console.log(document.cookie) */
-            /* $('#temporalModal').modal('show')
-            console.log('entro') */
-        });
+            console.log(document.cookie) 
+            $('#temporalModal').modal('show')
+            console.log('entro') 
+        });*/
     </script>
 
 
@@ -568,12 +329,12 @@
         $(document).ready(function() {
 
             // Gets the video src from the data-src on each button
-            console.log('hola')
+            
             var $videoSrc;
             $('.video-btn').click(function() {
                 $videoSrc = $(this).data("src");
             });
-            console.log($videoSrc);
+            
 
 
 

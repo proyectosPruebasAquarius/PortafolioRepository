@@ -32,7 +32,7 @@
                   <div class="row">
                     <div class="col-12 col-md-12">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d241.91375194952846!2d-88.93700446612296!3d14.040523063255392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8f6365da76e4ae8d%3A0xb526927bae7d0d75!2s23R7%2B57G%20BL%20Makeup%20%26%20More*21%2C%20Chalatenango%20CP%201301!3m2!1d14.0404474!2d-88.9368097!5e0!3m2!1ses-419!2ssv!4v1646345328431!5m2!1ses-419!2ssv" style="border:1px solid rgba(0, 0, 0, 0.125); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; border-radius: 0.5rem" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe class="embed-responsive-item map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.655242473433!2d-88.93729907076727!3d14.040467499385093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63656b58b485df%3A0xb6d5420d6d281f97!2sAquarius%20IT%2C%20S.A.de%20C.V!5e0!3m2!1ses!2ssv!4v1651606628134!5m2!1ses!2ssv" width="600" height="450" style="border:0;" style="border:1px solid rgba(0, 0, 0, 0.125); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; border-radius: 0.5rem" allowfullscreen="" loading="lazy"></iframe>
                       </div>
                     </div>
   
